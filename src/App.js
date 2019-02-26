@@ -6,21 +6,21 @@ class App extends Component {
   render() {
     return (
       <div style={{height: '300px', position: 'relative'}}>
-    <Layout fixedHeader>
-        <Header className="header-design" title={<span><span style={{ color: '#ddd' }}>Area / </span><strong>The Title</strong></span>}>
+    <Layout>
+        <Header className="header-color" title={<span>Liam Heywood /<strong>Online Portfolio</strong></span>}>
             <Navigation>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
+                <a href="aboutMe">About Me</a>
+                <a href="resume">Resume</a>
+                <a href="projects">Projects</a>
+                <a href="contactUs">Contact Us</a>
             </Navigation>
         </Header>
-        <Drawer className="header-design" title="Title">
+        <Drawer title="Title">
             <Navigation>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
+                <a href="aboutMe">About Me</a>
+                <a href="resume">Resume</a>
+                <a href="projects">Projects</a>
+                <a href="contactUs">Contact Us</a>
             </Navigation>
         </Drawer>
         <Content />
