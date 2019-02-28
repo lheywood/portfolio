@@ -4,11 +4,13 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "App.js",
   "dependencies": {
+    "material-components-web": "^0.44.1",
+    "node-sass": "^4.11.0",
+    "particles.js": "^2.0.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-mdl": "^1.11.0",
-    "material-components-web": "^0.44.1",
-    "node-sass": "^4.11.0",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.5"
   },
   "devDependencies": {},

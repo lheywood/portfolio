@@ -1,15 +1,15 @@
-import React, { Component  } from 'react';
-import img from './imgs/one.jpeg';
+import React, { Component } from 'react';
+import img from './imgs/one.jpg';
+import { Grid, Cell } from 'react-mdl';
 
-class Resume extends Component {
+class LandingPage extends Component {
     render() {
         return(
-            <div style="{{width: 100%, margin: 'auto'}}">
+            <div style={{width: '100%', margin: 'auto'}}>
             <Grid className="landing-grid">
                 <Cell col={12}>
                 Landing Page
-                <img
-                src={img} alt="tester"/>
+                <img src={img}  alt="tester"/>
                 </Cell>
             </Grid>
             </div>
@@ -17,4 +17,4 @@ class Resume extends Component {
     }
 }
 
-export default Resume;
+export default LandingPage;
