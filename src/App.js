@@ -2,20 +2,6 @@ import React, { Component } from 'react';
 import './App.scss';
 import  { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
-import Particles from 'react-particles-js';
-
-const particleOpt = {
-    particles: {
-         url: "src/SVGtest.svg",
-        number: {
-            value: 100,
-            density: {
-                enable: true,
-                value_area: 900,
-            }
-        }
-    }
-}
 
 
 class App extends Component {
@@ -28,7 +14,7 @@ class App extends Component {
                 <a href="AboutMe">About Me</a>
                 <a href="Resume">Resume</a>
                 <a href="Projects">Projects</a>
-                <a href="ContactUs">Contact Us</a>
+                <a href="Contact">Contact Us</a>
             </Navigation>
         </Header>
         <Drawer title="Title">
@@ -36,21 +22,13 @@ class App extends Component {
                 <a href="AboutMe">About Me</a>
                 <a href="Resume">Resume</a>
                 <a href="Projects">Projects</a>
-                <a href="ContactUs">Contact Us</a>
+                <a href="Contact">Contact Us</a>
             </Navigation>
         </Drawer>
         <Content>
-           <div className="mainContent">
-            
-           <Particles
-                params={ particleOpt }
-           />
-                
+           <div >  
             <Main />
-            
-            
-            
-           
+              
             </div>
         </Content>
     </Layout>
