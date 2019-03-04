@@ -12,15 +12,27 @@ class LandingPage extends Component {
                 <Cell col={12}>
                 
                 <img src={ukimg} alt="uk" className="homeImg"/>
-                <img  src={usimg} alt="uk" className="homeImg"/>
+                <img  src={usimg} alt="usa" className="homeImg"/>
 
                 <div className="bannerText">
                 <h1>
-                    Graduate of Computer Science & Mathematics minor
+                    Bachelor's Computer Science & Mathematics minor
                 </h1>
-                <br/>
-                <p>Experience with:</p>
+                <hr/>
+                <p>Experience in:</p>
                 <p>Java | JavaScript | NodeJS | React | HTML/CSS | C# </p>
+                
+
+                <div className="socialLinks">
+                
+                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                <i className="fab fa-linkedin" aria-hidden="true"/>
+                </a>
+
+                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                <i class="fab fa-github-square"></i>              </a>
+                </div>
+                
                 </div>
                 
                 </Cell>
