@@ -66,7 +66,6 @@ $black: #000000;
 	background: -webkit-linear-gradient(to right, $black, $red);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, $red, $white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	text-align: center;
-	margin: auto;
 	height: 100%;
 }
 
@@ -89,7 +88,6 @@ $black: #000000;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
 	
-	opacity: 0.8;
 	width: 75%;
 	margin: auto;
 	text-align: center;
@@ -136,6 +134,8 @@ $black: #000000;
 	}
 }
 
+/*Projects CSS */
+
 .cardTitle {
  color: #fff;
  height:200px; 
@@ -146,6 +146,103 @@ $black: #000000;
 .projectsGrid {
 	display: flex;
 }
+
+/* About Me CSS */
+.contentBody {
+	
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	font-family: 'Oxygen', sans-serif;
+
+	& .contentGrid {
+		text-align: center;
+		justify-content: center;
+		width: 80%;
+		height: 80%;
+		background: white;
+		color: black;
+		
+		margin-top: 20px;
+		padding-right: 30px;	
+
+		& hr {
+			width: 90%;
+			margin: auto;
+			padding-top: 15px;
+			border-top: 2px solid black;
+		}
+
+		& p {
+			font-size: 0.85em;
+			padding-bottom: 20px;
+		}
+
+		& h1 {
+			padding: 0px;
+			margin: 0px;
+			font-size: 1.4em;
+		}
+
+		& ul {
+			font-size: 0.85em;
+			list-style-type: none;
+			align-self: auto;
+			columns: 2;
+			-webkit-columns: 2;
+			-moz-columns: 2;
+			margin: 0px;
+		}
+
+	}
+}
+
+/*Contact CSS*/
+
+.contactBody {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	
+
+	& .contactGrid {
+		width: 80%;
+		height: 80%;
+		background: white;
+		color: black;
+		margin-top: 20px;
+		text-align: left;
+		font-family: 'Oxygen';
+	
+		& h2 {	
+			font-family: 'Oxygen';
+			margin: auto;	
+			font-size: 2em;
+		}
+	}
+}
+
+
+	.contactList {
+		color: #ffffff;
+
+		& a {
+			text-decoration: none;	
+		}
+
+		& i {
+		color: $black;
+		font-size: 25px;
+		padding-right: 5px;
+		}
+		
+
+		
+	
+		
+	}
+	
 
 
 
