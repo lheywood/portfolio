@@ -25,7 +25,7 @@ const particleOpts = {
         "random": false,
         "anim": {
           "enable": false,
-          "speed": 1,
+          "speed": 0.5,
           "opacity_min": 0.1,
           "sync": false
         }
@@ -35,7 +35,7 @@ const particleOpts = {
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 80,
+          "speed": 40,
           "size_min": 0.1,
           "sync": false
         }
@@ -49,7 +49,7 @@ const particleOpts = {
       },
       "move": {
         "enable": true,
-        "speed": 12,
+        "speed": 8,
         "direction": "none",
         "random": false,
         "straight": false,
