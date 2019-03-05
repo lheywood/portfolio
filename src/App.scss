@@ -61,12 +61,12 @@ $black: #000000;
 }
 
 .landingGrid {
-	color: #a5a5a5;
 	background: $red;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, $black, $red);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, $red, $white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	text-align: center;
 	height: 100%;
+	z-index: -1;
 }
 
 
@@ -207,14 +207,16 @@ $black: #000000;
 	
 
 	& .contactGrid {
-		width: 80%;
-		height: 80%;
+		width: 40%;
+		height: 100%;
 		background: white;
 		color: black;
 		margin-top: 20px;
-		text-align: left;
+		text-align: center;
 		font-family: 'Oxygen';
-	
+		box-shadow: 10px 10px 10px $black;
+		
+		
 		& h2 {	
 			font-family: 'Oxygen';
 			margin: auto;	
@@ -226,9 +228,23 @@ $black: #000000;
 
 	.contactList {
 		color: #ffffff;
+		justify-content: left;
+		
+		& ul {
+			color: $black;
+			list-style-type: none;
+		}
 
-		& a {
-			text-decoration: none;	
+		& li {
+
+			padding: 20px 0px;
+		}
+
+		& hr {
+			
+			width: 30%;
+			margin: auto;
+			border-top: 1px solid $black;
 		}
 
 		& i {

@@ -3,19 +3,17 @@ import './App.scss';
 import  { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
+import Particles from 'react-particles-js';
+import particleOpts from './components/particle.js';
 
-
-
-
-  
 
 
 class App extends Component {
   render() {
     return (
-      <div className="mainPage" id="particles-js">
+      <div className="mainPage">
     <Layout>
-        <Header className="header-color" title={<span><a id="homeLink" href="landingPage">Liam Heywood /<strong>Online Portfolio</strong></a></span>}>
+        <Header className="header-color" title={<span><a id="homeLink" href="landingPage">Liam Heywood /<strong> Online Portfolio</strong></a></span>}>
             <Navigation>
                 <Link to="AboutMe">About Me</Link>
                 <Link to="Resume">Resume</Link>
@@ -33,7 +31,15 @@ class App extends Component {
         </Drawer>
         <Content>
            <div className="landingGrid">  
-            <Main />
+           
+           <Main/>
+           <Particles params={particleOpts}/>
+           
+            
+           
+            
+            
+            
               
             </div>
         </Content>
