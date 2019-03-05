@@ -31,9 +31,9 @@ class App extends Component {
         </Drawer>
         <Content>
            <div className="landingGrid">  
-           
-           <Main/>
            <Particles params={particleOpts}/>
+           <Main/>
+          
            
             
            
