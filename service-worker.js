@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/lheywood/portfolio.git/precache-manifest.58942b2087a6efd1b27aad44de3e8b44.js"
+  "/portfolio/precache-manifest.5863ef901a0e69d992e3f9837ddb8c2d.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/lheywood/portfolio.git/index.html", {
+workbox.routing.registerNavigationRoute("/portfolio/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
