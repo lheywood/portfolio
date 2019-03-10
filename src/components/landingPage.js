@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import  ukimg  from './imgs/uk.png';
-import usimg from './imgs/usa.png';
+import  ukimg  from '../imgs/uk.png';
+import usimg from '../imgs/usa.png';
 import { Grid, Cell } from 'react-mdl';
 
 

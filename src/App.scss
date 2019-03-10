@@ -11,7 +11,7 @@ $black: #000000;
 
 .header-color {
 	color: #fff;
-	background: linear-gradient(-90deg, $red, $black, $black);
+	background: linear-gradient(90deg, $black, $black, $darkGrey, $black, $black);
 	background-size: 250% 250%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -63,7 +63,7 @@ $black: #000000;
 .landingGrid {
 	background: $red;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, $black, $red);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, $red, $white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, $white, $white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	text-align: center;
 	height: 100%;
 	
@@ -139,8 +139,7 @@ $black: #000000;
 .cardTitle {
  color: #fff;
  height:200px; 
- background-image: url(./components/imgs/JS.png);
- background-repeat: no-repeat;
+ background: $darkGrey;
 }
 
 .projectsGrid {
@@ -153,25 +152,28 @@ $black: #000000;
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	margin: auto;
 	font-family: 'Oxygen', sans-serif;
+	
 
 	& .contentGrid {
 		text-align: center;
 		justify-content: center;
 		width: 80%;
 		height: 80%;
-		background: white;
+		background: $darkGrey;
 		color: black;
+		-moz-box-shadow: 3px 3px 5px 6px $darkGrey;
+  		-webkit-box-shadow: 3px 3px 5px 6px $darkGrey;
+  		box-shadow: 10px 10px 5px 1px $lightGrey;
 		
-		margin-top: 20px;
+		margin-top: 25px;
 		padding-right: 30px;	
 
 		& hr {
-			width: 90%;
+			width: 75%;
 			margin: auto;
 			padding-top: 15px;
-			border-top: 2px solid black;
+			border-top: 3px solid black;
 		}
 
 		& p {

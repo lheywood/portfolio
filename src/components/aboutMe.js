@@ -1,6 +1,6 @@
 import React, { Component  } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import profilePhoto from './imgs/profilePhoto.png'; 
+import profilePhoto from '../imgs/profilePhoto.png'; 
 
 class AboutMe extends Component {
     render() {

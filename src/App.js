@@ -3,8 +3,7 @@ import './App.scss';
 import  { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
-import Particles from 'react-particles-js';
-import particleOpts from './components/particle.js';
+
 
 
 
@@ -30,20 +29,17 @@ class App extends Component {
             </Navigation>
         </Drawer>
         <Content>
+       
            <div className="landingGrid">  
-           <Particles params={particleOpts}/>
-           <Main/>
-          
            
-            
-           
-            
-            
-            
-              
+           <Main />
+         
             </div>
+            
         </Content>
+        
     </Layout>
+    
 </div>
     );
   }
