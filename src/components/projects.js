@@ -116,21 +116,28 @@ toggleCategories(){
 }
     render() {
         return(
-            <div>
+            <div className="projectContent">
+                <div className="pageHeader">
+                <h2>Projects</h2>
+            </div>
+            <div className="tabsContent">
                 <Tabs className="tabBar" activeTab={this.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
-                    <Tab>JAVA</Tab>
-                    <Tab>JAVASCRIPT</Tab>
-                    <Tab>React</Tab>
-                    <Tab>C#</Tab>
+                    <Tab className="tab">JAVA</Tab>
+                    <Tab className="tab">JAVASCRIPT</Tab>
+                    <Tab className="tab">React</Tab>
+                    <Tab className="tab">C#</Tab>
                 </Tabs>
                     <Grid>
                         <Cell col={12}>
-                            <div className="content">
+                            <div >
                             {this.toggleCategories()}
                                
                             </div>
                         </Cell>
                     </Grid>
+                </div>
+                <br/>
+                <br/>
             </div>
         )
     }

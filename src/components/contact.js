@@ -6,8 +6,10 @@ import { Grid, Cell, } from 'react-mdl';
 class Contact extends Component {
     render() {
         return(
-            <div className="contactBody">
-            
+            <div className="contactContent">
+            <div className="pageHeader">
+                <h2>Contact</h2>
+            </div>
                
                     
                
@@ -16,7 +18,6 @@ class Contact extends Component {
 
 
             <Cell col={12}>
-            <h2>Contact Me</h2>
                     <p>Please feel free to contact me in any of the following ways</p>
             
             <div className="contactList">
@@ -40,7 +41,8 @@ class Contact extends Component {
             </div>
             </Cell>
             </Grid>
-            
+            <br/>
+            <br/>
         </div>
             )
     }

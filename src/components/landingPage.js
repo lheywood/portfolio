@@ -8,7 +8,7 @@ class LandingPage extends Component {
     render() {
         return(
            <div style={{width: '100%', margin:'auto'}}>
-           <Grid className="landingGrid">
+           <Grid className="landingContent">
                 <Cell col={12}>
                 
                 <img src={ukimg} alt="uk" className="homeImg"/>

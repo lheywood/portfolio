@@ -12,15 +12,15 @@ class App extends Component {
     return (
       <div className="mainPage">
     <Layout>
-        <Header className="header-color" title={<span><a id="homeLink" href="landingPage">Liam Heywood /<strong> Online Portfolio</strong></a></span>}>
+        <Header className="headerColor" title={<span><a id="homeLink" href="landingPage">Liam Heywood /<strong> Online Portfolio</strong></a></span>}>
             <Navigation>
-                <Link to="AboutMe">About Me</Link>
-                <Link to="Resume">Resume</Link>
-                <Link to="Projects">Projects</Link>
-                <Link to="Contact">Contact</Link>
+                <Link className="link" to="AboutMe">About Me</Link>
+                <Link className="link" to="Resume">Resume</Link>
+                <Link className="link" to="Projects">Projects</Link>
+                <Link className="link" to="Contact">Contact</Link>
             </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="Heywood Portfolio">
             <Navigation>
                 <Link to="AboutMe">About Me</Link>
                 <Link to="Resume">Resume</Link>
@@ -30,11 +30,11 @@ class App extends Component {
         </Drawer>
         <Content>
        
-           <div className="landingGrid">  
+             
            
            <Main />
          
-            </div>
+           
             
         </Content>
         

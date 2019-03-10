@@ -5,7 +5,10 @@ import profilePhoto from '../imgs/profilePhoto.png';
 class AboutMe extends Component {
     render() {
         return(
-            <div className="contentBody">
+            <div className="aboutContent">
+             <div className="pageHeader">
+                <h2>About Me</h2>
+            </div>
                 <Grid className="contentGrid">
                 <Cell col={6}>
                 <h2>Liam Heywood</h2>
@@ -50,7 +53,8 @@ class AboutMe extends Component {
 
                 </Cell>
                 </Grid>
-            
+            <br/>
+            <br/>
             </div>
         )
     }
