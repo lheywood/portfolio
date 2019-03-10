@@ -7,10 +7,18 @@ class Contact extends Component {
     render() {
         return(
             <div className="contactBody">
+            
+               
+                    
+               
+            
             <Grid className="contactGrid">
+
+
             <Cell col={12}>
             <h2>Contact Me</h2>
-            <p>Please feel free to contact me in any of the following ways</p>
+                    <p>Please feel free to contact me in any of the following ways</p>
+            
             <div className="contactList">
                <ul>
                     <li>
@@ -27,12 +35,12 @@ class Contact extends Component {
                         <i className="fab fa-linkedin-in"></i> -
                         Available through LinkedIn 
                     </li>
-                    <hr/>
+                    
                 </ul>    
             </div>
             </Cell>
             </Grid>
-        
+            
         </div>
             )
     }

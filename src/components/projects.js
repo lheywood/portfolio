@@ -12,17 +12,17 @@ toggleCategories(){
     if(this.state.activeTab === 0){
         return (
             <div className="projectsGrid">
-            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                <CardTitle style={{height: '200px', color: '#000000', background: '#9f9f9f'}}>Finance Tracker</CardTitle>
-                    <CardText>
+            <Card shadow={5} className="card">
+                <CardTitle className="cardTitle">Finance Tracker</CardTitle>
+                    <CardText className="cardText">
                         This project will be a finance tracker that enables the user to keep track of what and where they spend
-                        their money on. Predicted completion date: <br/>May 2019
+                        their money on. Predicted completion date: May 2019gf gbfgthgbfgrg  thgbfvr  tygrftyhtgrf tyhtgrtyhtgrtyhtgrtytgr
                     </CardText>
                     <CardActions border>
                         <Button color>GitHub</Button>
                         <Button color>Live Demo</Button>
                     </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
+                    <CardMenu>
                         <IconButton style={{background:'#A4B3B6'}} name="share" />
                     </CardMenu>
             </Card>
@@ -31,9 +31,9 @@ toggleCategories(){
     } else if (this.state.activeTab === 1){
         return (
             <div className="projectsGrid">
-            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{height: '200px', color: '#000000', background: 'url(./imgs/JS.png)'}}>JavaScript Project 1</CardTitle>
-                <CardText>This is my finance tracker application. The app will be written in
+            <Card shadow={5} className="card">
+            <CardTitle className="cardTitle">Funky Name Generator</CardTitle>
+                <CardText className="cardText">This is my finance tracker application. The app will be written in
                      Java and use a database to store the data. As you can see it is still currently
                     under development. The expected completion date is May 1st. 
                 </CardText>
@@ -41,27 +41,26 @@ toggleCategories(){
                     <Button color>GitHub</Button>
                     <Button color>Live Demo</Button>
                 </CardActions>
-                <CardMenu style={{color: '#fff'}}>
+                <CardMenu>
                     <IconButton style={{background:'#A4B3B6'}} name="share" />
                 </CardMenu>
         </Card>
-        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{height: '200px', color: '#000000', background: 'url(./imgs/JS.png)'}}>JavaScript Project 2</CardTitle>
-                <CardText>This is my finance tracker application. The app will be written in
-                     Java and use a database to store the data. As you can see it is still currently
-                    under development. The expected completion date is May 1st. 
+        <Card shadow={5} className="card">
+            <CardTitle className="cardTitle">Find Longest Substring</CardTitle>
+                <CardText className="cardText">
+                    This simple application finds the longest common substring when given two strings.
                 </CardText>
                 <CardActions border>
                     <Button color>GitHub</Button>
                     <Button color>Live Demo</Button>
                 </CardActions>
-                <CardMenu style={{color: '#fff'}}>
+                <CardMenu>
                     <IconButton style={{background:'#A4B3B6'}} name="share" />
                 </CardMenu>
         </Card>
-        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{height: '200px', color: '#000000', background: 'url(./imgs/JS.png)'}}>JavaScript Project 3</CardTitle>
-                <CardText>This is my finance tracker application. The app will be written in
+        <Card shadow={5} className="card">
+            <CardTitle className="cardTitle">JavaScript Project 3</CardTitle>
+                <CardText className="cardText">This is my finance tracker application. The app will be written in
                      Java and use a database to store the data. As you can see it is still currently
                     under development. The expected completion date is May 1st. 
                 </CardText>
@@ -69,18 +68,18 @@ toggleCategories(){
                     <Button color>GitHub</Button>
                     <Button color>Live Demo</Button>
                 </CardActions>
-                <CardMenu style={{color: '#fff'}}>
+                <CardMenu>
                     <IconButton style={{background:'#A4B3B6'}} name="share" />
                 </CardMenu>
         </Card>
         </div>
-        )
+        );
     }
     else if (this.state.activeTab === 2){
         return (
-        <div>
-            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                <CardTitle style={{height: '200px', color: '#000000', background: 'url(./imgs/JS.png)'}}>Portfolio</CardTitle>
+        <div className="projectsGrid">
+            <Card shadow={5} className="card">
+                <CardTitle className="cardTitle">Portfolio</CardTitle>
                     <CardText>
                         My personal portfolio page created with React. Here you can find out about myself and my experiences 
                         as well as my resume and how to contact.
@@ -89,7 +88,7 @@ toggleCategories(){
                         <Button color>GitHub</Button>
                         <Button color>Live Demo</Button>
                     </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
+                    <CardMenu>
                         <IconButton style={{background:'#A4B3B6'}} name="share" />
                     </CardMenu>
         </Card>
@@ -98,12 +97,10 @@ toggleCategories(){
     }
     else if (this.state.activeTab === 3){
         return (
-        <div>
-            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                <CardTitle style={{height: '200px', color: '#000000', background: 'url(./imgs/JS.png)'}}>JavaScript Project 3</CardTitle>
-                    <CardText>This is my finance tracker application. The app will be written in
-                            Java and use a database to store the data. As you can see it is still currently
-                            under development. The expected completion date is May 1st. 
+        <div className="projectsGrid">
+            <Card shadow={5} className="card">
+                <CardTitle className="cardTitle">Projects Coming Soon</CardTitle>
+                    <CardText> <br></br>
                     </CardText>
                     <CardActions border>
                         <Button color>GitHub</Button>
@@ -114,13 +111,13 @@ toggleCategories(){
                     </CardMenu>
         </Card>
     </div>
-        )
+        );
     }
 }
     render() {
         return(
-            <div className="categoryTabs">
-                <Tabs activeTab={this.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
+            <div>
+                <Tabs className="tabBar" activeTab={this.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
                     <Tab>JAVA</Tab>
                     <Tab>JAVASCRIPT</Tab>
                     <Tab>React</Tab>
