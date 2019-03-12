@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="mainPage">
     <Layout>
-        <Header className="headerColor" title={<span><a id="homeLink" href="landingPage">Liam Heywood /<strong> Online Portfolio</strong></a></span>}>
+        <Header className="headerColor" title={<span><Link id="homeLink" to="/">Liam Heywood /<strong> Online Portfolio</strong></Link></span>}>
             <Navigation>
                 <Link className="link" to="AboutMe">About Me</Link>
                 <Link className="link" to="Resume">Resume</Link>
@@ -20,7 +20,7 @@ class App extends Component {
                 <Link className="link" to="Contact">Contact</Link>
             </Navigation>
         </Header>
-        <Drawer title="Heywood Portfolio">
+        <Drawer title="Heywood Portfolio" className="drawer">
             <Navigation>
                 <Link to="AboutMe">About Me</Link>
                 <Link to="Resume">Resume</Link>
@@ -28,14 +28,8 @@ class App extends Component {
                 <Link to="Contact">Contact</Link>
             </Navigation>
         </Drawer>
-        <Content>
-       
-             
-           
-           <Main />
-         
-           
-            
+        <Content className="mainPage">
+            <Main />
         </Content>
         
     </Layout>

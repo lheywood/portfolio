@@ -9,11 +9,15 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-mdl": "^1.11.0",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
     "react-scripts": "^2.1.8"
   },
-  "devDependencies": {},
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -28,7 +32,7 @@
   "bugs": {
     "url": "https://github.com/lheywood/portfolio/issues"
   },
-  "homepage": "https://github.com/lheywood/portfolio",
+  "homepage": "https://lheywood.github.io/portfolio/",
   "browserslist": [
     ">0.2%",
     "not dead",

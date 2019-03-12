@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Tab, Tabs, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tab, Tabs, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton, Switch } from 'react-mdl';
+import Toggle from '../Toggle';
 
 class Projects extends Component {
 
@@ -77,10 +78,11 @@ toggleCategories(){
     }
     else if (this.state.activeTab === 2){
         return (
+
         <div className="projectsGrid">
             <Card shadow={5} className="card">
                 <CardTitle className="cardTitle">Portfolio</CardTitle>
-                    <CardText>
+                    <CardText className="cardText">
                         My personal portfolio page created with React. Here you can find out about myself and my experiences 
                         as well as my resume and how to contact.
                     </CardText>
@@ -98,15 +100,15 @@ toggleCategories(){
     else if (this.state.activeTab === 3){
         return (
         <div className="projectsGrid">
-            <Card shadow={5} className="card">
+            <Card shadow={10} className="card">
                 <CardTitle className="cardTitle">Projects Coming Soon</CardTitle>
-                    <CardText> <br></br>
+                    <CardText className="cardText"> 
                     </CardText>
                     <CardActions border>
-                        <Button color>GitHub</Button>
-                        <Button color>Live Demo</Button>
+                        <Button>GitHub</Button>
+                        <Button>Live Demo</Button>
                     </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
+                    <CardMenu>
                         <IconButton style={{background:'#A4B3B6'}} name="share" />
                     </CardMenu>
         </Card>
@@ -117,6 +119,14 @@ toggleCategories(){
     render() {
         return(
             <div className="projectContent">
+            <Toggle> 
+            {({ on, toggle }) => (
+            <div>
+           <div style= {{float: 'right', margin: '5px 15px 0 0'}}>
+                    <Switch ripple className="switch" defaultUnchecked onClick={toggle}>s</Switch>
+                </div>
+            { on && 
+            <div>
                 <div className="pageHeader">
                 <h2>Projects</h2>
             </div>
@@ -138,6 +148,11 @@ toggleCategories(){
                 </div>
                 <br/>
                 <br/>
+                </div>
+            }
+             </div>
+         )}
+            </Toggle>
             </div>
         )
     }
