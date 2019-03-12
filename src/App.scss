@@ -30,7 +30,7 @@ $black: #000000;
 
 .link:hover {
 	transition:  0.1s ;
-	transform: scale(-1);
+	transform: scale(1.1);
 }
 
 .headerColor {
@@ -100,7 +100,10 @@ Switch {
 	width: 100%;
 	height: 100%;
 	background-image: url('./imgs/projectBanner.jpg');
-	background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -178,7 +181,10 @@ Switch {
 	width: 100%;
 	min-height: 100%;
 	background-image: url('./imgs/tyne.jpg');
-	background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	font-family: 'Oxygen', sans-serif;
@@ -234,7 +240,10 @@ Switch {
 	width: 100%;
 	min-height: 100%;
 	background-image: url('./imgs/mke.jpg');
-	background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	align-items: center;
@@ -265,7 +274,10 @@ Switch {
 	width: 100%;
 	min-height: 100%;
 	background-image: url('./imgs/gateshead.jpg');
-	background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 
@@ -327,6 +339,10 @@ Switch {
 	min-height: 100%;
 	background-image: url('./imgs/contact.jpg');
 	background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
 	background-position: center;
 	background-repeat: no-repeat;
 

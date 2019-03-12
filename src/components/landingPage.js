@@ -15,7 +15,7 @@ class LandingPage extends Component {
 
                 <div className="bannerText">
                     <h1>
-                        Bachelor's Computer Science & Mathematics minor
+                        Bachelor's Degree Computer Science & Mathematics minor
                     </h1>
                     <hr/>
                     <p>Experience in:</p>
