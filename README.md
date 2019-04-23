@@ -1,2 +1,1 @@
-to run:
-npm start
+Online Portfolio created using react.
