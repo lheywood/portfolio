@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/gateshead.e0e6a841.jpg"
   },
   {
-    "revision": "ebd27909a594cf98fa5f21708eaa4131",
-    "url": "/portfolio/static/media/tyne.ebd27909.jpg"
-  },
-  {
     "revision": "44a36e8bf8f5a09896f689d9150c3d28",
     "url": "/portfolio/static/media/mke.44a36e8b.jpg"
+  },
+  {
+    "revision": "ebd27909a594cf98fa5f21708eaa4131",
+    "url": "/portfolio/static/media/tyne.ebd27909.jpg"
   },
   {
     "revision": "cb46e551da65711922f5e5aa66ad3dc2",
